@@ -38,6 +38,7 @@ app.get('/api/TodoItems/ :number', function (req, res) {
   res.status(200).json(todoItem);
 }); 
 
+  //this responds to a post request on the root route
 app.post('/api/TodoItems/', function (req, res) {
   let isToDoNew = true;
   for (let objIndex in data) {
@@ -55,5 +56,11 @@ app.post('/api/TodoItems/', function (req, res) {
 
 });
 
+//this resposnds to a delete request to the /user route
+app.delete('/api/TodoItems/:number', function (req, res) {
+  let number = parseInt(req.params.number, 10);
+  let todoItem = data[number];
+  res.status(200).json(todoItem);
+});
 
 module.exports = app;
