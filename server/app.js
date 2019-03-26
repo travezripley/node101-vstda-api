@@ -29,9 +29,9 @@ app.get('/api/TodoItems', function (req, res) {
 
 }); 
 
-app.get('/api/TodoItems/ :number', function (req, res) {
+app.get('/api/TodoItems/:number', function (req, res) {
   var number = parseInt(req.params.number, 10);
-  res.status(200).json(data);
+ 
 
   //using the array based numbering.
   let todoItem = data[number];
