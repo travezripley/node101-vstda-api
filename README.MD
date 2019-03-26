@@ -277,6 +277,7 @@ And that's it! Once you submit the project, you can move onto the next assignmen
 
 Site deployed to Now at the following URL
 
+https://movie-finder-data-8juzcndwc.now.sh
 
 Thank you for taking the time to look at my projects,
 
